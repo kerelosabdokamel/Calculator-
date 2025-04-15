@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آلة حاسبة علمية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen">
+      <input type="text" id="display" disabled>
+      <div class="mode" id="mode">الوضع: درجات</div>
+    </div>
+    
+    <div class="buttons">
+      <div class="function-buttons">
+        <button onclick="calculateScientific('sin')">sin</button>
+        <button onclick="calculateScientific('cos')">cos</button>
+        <button onclick="calculateScientific('tan')">tan</button>
+        <button onclick="calculateScientific('log')">log</button>
+        <button onclick="calculateScientific('sqrt')">√</button>
+        <button onclick="calculateScientific('pi')">π</button>
+        <button onclick="power()">xʸ</button>
+        <button onclick="toggleAngleMode()">Deg/Rad</button>
+      </div>
+
+      <div class="main-buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="backspace()">⌫</button>
+        <button onclick="appendOperator('/')">÷</button>
+        <button onclick="appendOperator('*')">×</button>
+
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('-')">-</button>
+
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('+')">+</button>
+
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="calculate()">=</button>
+
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendDot()">.</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
